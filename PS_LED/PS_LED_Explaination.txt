@@ -1,0 +1,58 @@
+EXPLANATION: PS-PL COMMUNICATION AND MEMORY MAPPED I/O (MMIO)
+=============================================================
+
+1. THE CORE CONCEPT: MEMORY MAPPED I/O (MMIO)
+---------------------------------------------
+The Zynq Processing System (PS) communicates with the Programmable Logic (PL)
+using specific memory addresses. The processor does not know "LEDs" or "Switches"
+exist; it only knows addresses.
+
+* 0x00000000 to 0x3FFFFFFF: Mapped to DDR RAM (Storage).
+* 0x43C00000: Mapped to your Custom AXI Peripheral (Hardware).
+
+2. THE ADDRESS (0x43c00000)
+---------------------------
+C code:
+    volatile unsigned int *addr = (volatile unsigned int *)0x43c00000;
+
+* This pointer tells the PS: "When I read/write here, do not go to RAM.
+    Go to the hardware peripheral located at this specific address."
+* addr[0] = Base Address + 0 (Offset 0x00)
+* addr[1] = Base Address + 4 (Offset 0x04)
+
+3. THE ROLE OF THE PS (PROCESSING SYSTEM)
+-----------------------------------------
+The PS acts as the "Master" (Initiator). The hardware (PL) is the "Slave" (Passive).
+* The hardware cannot send data on its own; it must wait for the PS to ask.
+* When the C code executes `addr[0] = val`, the PS initiates an AXI Write Transaction
+    to send `val` to the peripheral.
+
+4. THE VERILOG CASE STATEMENT (READ LOGIC)
+------------------------------------------
+This logic acts as a traffic cop for incoming READ requests from the PS.
+It looks at the address bits to decide what data to send back.
+
+    case ( axi_araddr[...] )
+      2'h0 : reg_data_out <= {..., switches_in}; // Reading addr[0] returns Switch state
+      2'h1 : reg_data_out <= 32'h0xaabbcdd;      // Reading addr[1] returns Magic Number
+      ...
+    endcase
+
+5. THE LED CONTROL (WRITE LOGIC)
+--------------------------------
+You asked: "slv_reg0 is not assigned a value in the snippet, so how does it work?"
+
+* The Write Logic (elsewhere in the AXI file) updates `slv_reg0` whenever
+    the PS writes to Offset 0.
+* The C code writes to the address -> The value travels over AXI ->
+    The Verilog saves it into `slv_reg0`.
+* The line `assign leds_out = slv_reg0[7:0];` physically wires the
+    LEDs to this register.
+
+SUMMARY FLOW
+------------
+1. Input:  User toggles a Switch.
+2. Read:   C code reads `addr[0]`. The Verilog `case` statement sends switch data to PS.
+3. Write:  C code writes that data back to `addr[0]`.
+4. Update: Verilog Write Logic saves data into `slv_reg0`.
+5. Output: `leds_out` reflects the new value in `slv_reg0`.
