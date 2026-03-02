@@ -9,7 +9,7 @@
 typedef ap_axiu<512, 0, 0, 0> axis_512_t;
 
 void MATMUL(hls::stream<axis_512_t> &s_axis,
-                   hls::stream<axis_512_t> &m_axis) {
+            hls::stream<axis_512_t> &m_axis) {
 
     #pragma HLS INTERFACE axis port=s_axis
     #pragma HLS INTERFACE axis port=m_axis
@@ -19,9 +19,10 @@ void MATMUL(hls::stream<axis_512_t> &s_axis,
     int B[M][P];
     int AB[N][P];
 
-    // =====================================================
-    // STAGE 1 — Load A (16 packets, one row per packet)
-    // =====================================================
+    #pragma HLS ARRAY_PARTITION variable=A  type=complete dim=2
+    #pragma HLS ARRAY_PARTITION variable=B  type=complete dim=1
+    #pragma HLS ARRAY_PARTITION variable=AB type=complete dim=0
+
     load_A: for(int i = 0; i < N; i++) {
         #pragma HLS PIPELINE II=1
         axis_512_t pkt = s_axis.read();
@@ -31,9 +32,6 @@ void MATMUL(hls::stream<axis_512_t> &s_axis,
         }
     }
 
-    // =====================================================
-    // STAGE 2 — Load B (16 packets, one row per packet)
-    // =====================================================
     load_B: for(int i = 0; i < M; i++) {
         #pragma HLS PIPELINE II=1
         axis_512_t pkt = s_axis.read();
@@ -43,20 +41,10 @@ void MATMUL(hls::stream<axis_512_t> &s_axis,
         }
     }
 
-    // =====================================================
-    // STAGE 3 — YOUR EXACT COMPUTATION BLOCK
-    // =====================================================
-    #pragma HLS ARRAY_PARTITION variable=A  type=complete dim=2
-    #pragma HLS ARRAY_PARTITION variable=B  type=complete dim=1
-    #pragma HLS ARRAY_PARTITION variable=AB type=complete dim=0
-
     row: for(int i = 0; i < N; ++i) {
-        #pragma HLS LOOP_FLATTEN
+        #pragma HLS PIPELINE II=4
         col: for(int j = 0; j < P; ++j) {
-            #pragma HLS LOOP_FLATTEN
-
             int acc = 0;
-
             product: for(int k = 0; k < M; ++k) {
                 #pragma HLS UNROLL
                 acc += A[i][k] * B[k][j];
@@ -65,9 +53,6 @@ void MATMUL(hls::stream<axis_512_t> &s_axis,
         }
     }
 
-    // =====================================================
-    // STAGE 4 — Stream out AB (16 packets, one row each)
-    // =====================================================
     store: for(int i = 0; i < N; i++) {
         #pragma HLS PIPELINE II=1
         ap_uint<512> result = 0;
