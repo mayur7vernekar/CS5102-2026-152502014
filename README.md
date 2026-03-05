@@ -26,4 +26,11 @@ LAB_5
 -----
 FIR filter implementation on Zynq SoC using AXI-DMA for data transfer. Demonstrates full system integration with HLS IP and Vitis software design.
 
+matmul
+------
+Matrix multiplication implementations with various optimization techniques. Includes raw implementation, stream-based optimization, and unoptimized versions for performance comparison.
 
+Files:
+- mat_mul_raw.cpp: Basic matrix multiplication implementation
+- mat_mul_stream.cpp: Stream-optimized matrix multiplication using HLS streams
+- matmul_unoptimized.cpp: Unoptimized baseline implementation for comparison
