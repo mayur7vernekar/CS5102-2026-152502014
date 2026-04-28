@@ -34,3 +34,22 @@ Files:
 - mat_mul_raw.cpp: Basic matrix multiplication implementation
 - mat_mul_stream.cpp: Stream-optimized matrix multiplication using HLS streams
 - matmul_unoptimized.cpp: Unoptimized baseline implementation for comparison
+
+FFT
+---
+Fast Fourier Transform (FFT) implementation for 8-point DIT (Decimation-In-Time) FFT using HLS. Includes complete HLS synthesis flow with Verilog and VHDL generation for hardware implementation on FPGA.
+
+Files:
+- fft8.cpp: Main FFT implementation
+- fft8.h: Header file with function declarations
+- fft8_tb.cpp: Testbench for FFT verification
+
+Insertion_sort
+--------------
+Sorting algorithm implementations using insertion sort with two different AXI interface versions. Compares Memory AXI and Stream AXI interface patterns for data exchange.
+
+Files:
+- Insertion_sort.cpp: Insertion sort with Memory AXI interface
+- Insertion_sort_maxi.cpp: Insertion sort with Stream AXI interface
+- tb_Insertion_sort.cpp: Testbench for Memory AXI version
+- tb_Insertion_sort_maxi.cpp: Testbench for Stream AXI version
