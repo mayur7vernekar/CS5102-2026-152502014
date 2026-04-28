@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'out_7' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="FFT" solutionName="solution1" date="2026-04-10T15:16:51.147+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'out_6' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="FFT" solutionName="solution1" date="2026-04-10T15:16:51.116+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'out_5' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="FFT" solutionName="solution1" date="2026-04-10T15:16:51.085+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'out_4' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="FFT" solutionName="solution1" date="2026-04-10T15:16:51.055+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'out_3' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="FFT" solutionName="solution1" date="2026-04-10T15:16:51.028+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'out_2' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="FFT" solutionName="solution1" date="2026-04-10T15:16:50.989+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'out_1' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="FFT" solutionName="solution1" date="2026-04-10T15:16:50.960+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'out_0' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="FFT" solutionName="solution1" date="2026-04-10T15:16:50.934+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../fft8.cpp in debug mode
+   Generating csim.exe
+k     Real         Imag        
+----------------------------
+X[0]      7.9998      0.0000
+X[1]     -5.8281     -2.4141
+X[2]      0.0000      0.0000
+X[3]     -0.1719     -0.4141
+X[4]      0.0000      0.0000
+X[5]     -0.1719      0.4141
+X[6]      0.0000      0.0000
+X[7]     -5.8281      2.4141
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

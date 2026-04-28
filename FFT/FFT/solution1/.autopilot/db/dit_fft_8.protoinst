@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"dit_fft_8": {
+			"proto_instances": {
+			}
+		}
+	}
+}

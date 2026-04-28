@@ -18,7 +18,8 @@ void FIR_ALL_NEW(hls::stream<axis_t> &s_axis,
 #pragma HLS array_partition variable=shift_reg complete
 
     // ---- Axis handshake was used here ----
-    axis_t in_pkt = s_axis.read();   // blocks until VALID&READY
+    axis_t in_pkt;
+    in_pkt = s_axis.read();// blocks until VALID&READY
     int x = in_pkt.data;
 
     int acc = 0;

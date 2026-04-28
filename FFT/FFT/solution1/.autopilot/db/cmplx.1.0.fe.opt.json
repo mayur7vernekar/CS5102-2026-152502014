@@ -1,0 +1,62 @@
+{
+  "0": {
+    "basicblocks": 10,
+    "calls": "2 2 2 2 2 2 2 2 2 2 2 2",
+    "file": "fft8.cpp",
+    "fileloc": 15,
+    "instructions": 287,
+    "loads": {
+      "G": 24,
+      "L": 24,
+      "T": 8
+    },
+    "name": "dit_fft_8",
+    "stores": {
+      "L": 48,
+      "T": 8
+    },
+    "total_instructions": 37388
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fft8.cpp",
+    "fileloc": 3,
+    "instructions": 5,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 2957
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fft8.cpp",
+    "fileloc": 6,
+    "instructions": 151,
+    "loads": {
+      "L": 4
+    },
+    "name": "butterfly",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 3087
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fft8.cpp",
+    "fileloc": 4,
+    "instructions": 5,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 2957
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "1 3",
+    "file": "fft8.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 3,
+    "name": "",
+    "total_instructions": 5917
+  }
+}

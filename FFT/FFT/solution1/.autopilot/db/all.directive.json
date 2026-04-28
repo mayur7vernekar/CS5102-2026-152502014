@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "dit_fft_8",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "dit_fft_8"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/mayur/PG/SoCD_lab/FFT/FFT/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

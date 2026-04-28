@@ -1,0 +1,126 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="butterfly" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/mayur/PG/SoCD_lab/FFT/FFT/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dit_fft_8" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s2 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fft8.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dit_fft_8" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:39:28" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:40:31" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:41:31" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:42:31" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:45:31" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:46:31" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:47:31" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:48:31" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:51:33" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:52:33" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:53:33" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="fft8.cpp:54:33" msg_body="Inlining function 'butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)'">
+        <args Callee="butterfly(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File fft8.cpp Line 6 Column 0" Caller="dit_fft_8(std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*, std::complex&lt;ap_fixed&lt;16, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; &gt;*)" Caller-DebugLoc="File fft8.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Applying array_partition to 'in': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Applying array_partition to 'out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'out_7' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="out_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'out_6' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="out_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'out_5' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="out_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'out_4' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="out_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'out_3' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="out_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'out_2' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="out_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'out_1' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="out_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'out_0' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="out_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'in_7' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="in_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'in_6' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="in_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'in_5' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="in_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'in_4' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="in_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'in_3' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="in_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'in_2' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="in_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'in_1' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="in_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="fft8.cpp:15:0" msg_body="Aggregating scalar variable 'in_0' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="in_0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
